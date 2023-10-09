@@ -1,23 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/NavBar';
 import Formulary from './components/Contact';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/HomePage';
+import Notfound from './components/NotFound';
+
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-      <Nav />
+  
 
-      <div className='text-center'> 
-        <h1 className='p-3' >Bienvenido a Happy Cake</h1>
-          <p>El lugar de los pasteles felices</p>
-          <img src="src\assets\cake.png" alt="" className='img' />
-      
-      </div>
+        <Routes>
+          <Route path="/" element={<Home />}  />
+          <Route path="/contacto" element={<Formulary />}  />
+          <Route path="*" element={<Notfound />}  />
+            
+        </Routes>
      
     </>
   )

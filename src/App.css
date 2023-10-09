@@ -1,5 +1,8 @@
 .NavBar {
   background-color: rgb(238, 61, 61);
+  color: white;
+  text-decoration: none;
+
 }
 
 .Form {
@@ -11,4 +14,18 @@
 .img {
   width: 300px;
   height: 300px;
+
+}
+
+.img404 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: block; 
+  margin: 0 auto;
+  margin-top: 10%; 
+}
+
+.none{
+  text-decoration: none;
 }
